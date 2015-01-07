@@ -1,4 +1,4 @@
-git-big-picture (1.0.0-dev-1) unstable; urgency=low
+git-big-picture (1.0.0~dev-1) unstable; urgency=low
 
   * Initial release (Closes: #774782).
 
