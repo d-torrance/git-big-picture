@@ -10,7 +10,7 @@ Vcs-Browser: https://github.com/d-torrance/git-big-picture
 
 Package: git-big-picture
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, ${python:Depends}
+Depends: ${misc:Depends}, ${python:Depends}
 Description: Visualization tool for Git repositories
  git-big-picture is a visualization tool for Git repositories. You can think of
  it as a filter that removes uninteresting commits from a DAG modelling a Git
