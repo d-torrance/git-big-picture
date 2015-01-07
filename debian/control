@@ -11,5 +11,10 @@ Vcs-Browser: https://github.com/d-torrance/git-big-picture
 Package: git-big-picture
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: Visualization tool for Git repositories
+ git-big-picture is a visualization tool for Git repositories. You can think of
+ it as a filter that removes uninteresting commits from a DAG modelling a Git
+ repository and thereby exposes the big picture: for example the hierarchy of
+ tags and branches. git-big-picture supports convenience output options and can
+ filter different classes of commits. It uses the Graphviz utility to render
+ images that are pleasing to the eye.
