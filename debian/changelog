@@ -1,0 +1,5 @@
+git-big-picture (1.0.0-dev-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Doug Torrance <dtorrance@monmouthcollege.edu>  Tue, 06 Jan 2015 22:55:56 -0600
