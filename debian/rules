@@ -1,3 +1,20 @@
 #!/usr/bin/make -f
 %:
 	dh $@ --with python2
+
+get-orig-source:
+	@wget https://github.com/esc/git-big-picture/archive/master.tar.gz
+	@git checkout upstream
+	@git pull https://github.com/esc/git-big-picture.git
+	@grep -Po "(?<=__version__ = ').*(?=')" git-big-picture | \
+		sed 's/-/~/' > version
+	@git show HEAD^:git-big-picture | \
+		grep -Po "(?<=__version__ = ').*(?=')" | \
+		sed 's/-/~/' > oldversion
+	@if test `cat oldversion` = `cat version` ; then \
+		echo "`cat version`+`date -d @\`git log -1 --pretty=format:%ct\` +%Y%m%d`" > version; \
+	fi
+	git checkout master
+	@mv -v master.tar.gz \
+		../git-big-picture_`cat version`.orig.tar.gz
+	@rm version oldversion
