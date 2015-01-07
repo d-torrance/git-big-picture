@@ -1,5 +1,5 @@
 Source: git-big-picture
-Section: unknown
+Section: vcs
 Priority: optional
 Maintainer: Doug Torrance <dtorrance@monmouthcollege.edu>
 Build-Depends: debhelper (>= 9)
