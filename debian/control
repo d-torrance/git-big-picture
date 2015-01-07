@@ -9,7 +9,7 @@ Vcs-Git: https://github.com/d-torrance/git-big-picture.git
 Vcs-Browser: https://github.com/d-torrance/git-big-picture
 
 Package: git-big-picture
-Architecture: any
+Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: <insert up to 60 chars description>
  <insert long description, indented with spaces>
