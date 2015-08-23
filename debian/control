@@ -1,7 +1,7 @@
 Source: git-big-picture
 Section: vcs
 Priority: optional
-Maintainer: Doug Torrance <dtorrance@monmouthcollege.edu>
+Maintainer: Doug Torrance <dtorrance@piedmont.edu>
 Build-Depends: debhelper (>= 9), python, python-setuptools
 X-Python-Version: >=2.6
 Standards-Version: 3.9.6
