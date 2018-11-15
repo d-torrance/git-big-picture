@@ -5,7 +5,7 @@
 #
 # Copyright (C) 2010    Sebastian Pipping <sebastian@pipping.org>
 # Copyright (C) 2010    Julius Plenz <julius@plenz.com>
-# Copyright (C) 2010-11 Valentin Haenel <valentin.haenel@gmx.de>
+# Copyright (C) 2010-18 Valentin Haenel <valentin.haenel@gmx.de>
 #
 # git-big-picture is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -23,12 +23,22 @@
 from setuptools import setup
 from git_big_picture import __version__ as VERSION
 
+with open('README.rst') as f:
+    long_description = f.read()
 
 setup(name = 'git-big-picture',
     version = VERSION,
     author = 'Sebastian Pipping, Julius Plenz, and Valentin Haenel',
-    description = 'Visualize git repositories.',
+    description = 'Git -- the big picture',
+    long_description=long_description,
     url = 'https://github.com/esc/git-big-picture',
     license = 'GPL v3 or later',
     scripts = ['git-big-picture'],
+    classifiers=[
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+    ],
 )

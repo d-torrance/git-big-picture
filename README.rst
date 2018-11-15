@@ -1,6 +1,9 @@
 git-big-picture
 ===============
 
+.. image:: https://travis-ci.org/esc/git-big-picture.svg?branch=master
+    :target: https://travis-ci.org/esc/git-big-picture
+
 ``git-big-picture`` is a visualization tool for Git repositories. You can think
 of it as a filter that removes uninteresting commits from a DAG modelling a Git
 repository and thereby exposes the big picture: for example the hierarchy of
@@ -57,6 +60,13 @@ But since the commits would be labeled with their refs, it would look more like
             \     /
              topic
 
+Demo Video
+----------
+
+Chuwei Lu has made a youtube video showing how to use ``git-big-picture``:
+
+https://www.youtube.com/watch?v=H7w7JWSy3oc&feature=youtu.be
+
 Screenshots
 -----------
 
@@ -76,14 +86,14 @@ And here is the reduced version:
 
 We also have a real world examples from:
 
-* `cython <http://imgdump.zetatech.org/cython-big-picture.png>`_
-* `PyMVPA <http://imgdump.zetatech.org/pymvpa-big-picture.png>`_
-* `bloscpack <http://imgdump.zetatech.org/bloscpack-big-picture.png>`_
+* `cython <https://raw.github.com/esc/git-big-picture/master/screenshots/cython-big-picture.png>`_
+* `PyMVPA <https://raw.github.com/esc/git-big-picture/master/screenshots/pymvpa-big-picture.png>`_
+* `bloscpack <https://raw.github.com/esc/git-big-picture/master/screenshots/bloscpack-big-picture.png>`_
 
 Dependencies
 ------------
 
-* Python 2.6 or 2.7 (2.5 will not work, if you try it with 3.3 let us know)
+* Python 2.7 or Python 3.x
 * Git (1.7.1 works)
 * Graphviz utility
 * Nosetest and Cram (only for running tests)
@@ -91,7 +101,15 @@ Dependencies
 Installation
 ------------
 
-Just run it straight from a clone or download:
+As of ``v0.10.1`` you may install it from PyPi:
+
+https://pypi.org/project/git-big-picture/
+
+.. code:: console
+
+   $ pip install git-big-picture
+
+Alternatively, Just run it straight from a clone or download:
 
 .. code:: console
 
@@ -100,6 +118,7 @@ Just run it straight from a clone or download:
     $ ./git-big-picture --help
 
     $ wget https://raw.github.com/esc/git-big-picture/master/git-big-picture
+    $ chmod 755 git-big-picture 
     $ ./git-big-picture -h
 
 Alternatively, use the standard ``setup.py`` script to install it system wide
@@ -406,6 +425,19 @@ TODO
 Changelog
 ---------
 
+* v0.10.1 - 2018-11-04
+
+  * Fix PyPi release
+
+* v0.10.0 - 2018-11-04
+
+  * First release after 6 years
+  * Suppot for Python: 2.7, 3.4, 3.5, 3.6, 3.7
+  * Add Python classifiers to setup.py
+  * Tempfile suffix now matches format
+  * Continuous integration via travis.ci
+  * Fixed installation instructions
+
 * v0.9.0 - 2012-11-20
 
   * rst-ify readme
@@ -437,6 +469,7 @@ Authors/Contributors
 * Julius Plenz       <julius@plenz.com>
 * Valentin Haenel    <valentin.haenel@gmx.de>
 * Yaroslav Halchenko <debian@onerussian.com>
-* Chris West (Faux) <git@goeswhere.com>
+* Chris West (Faux)  <git@goeswhere.com>
+* Antonio Valentino  <antonio.valentino@tiscali.it>
 
 
