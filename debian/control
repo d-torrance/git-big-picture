@@ -10,7 +10,7 @@ Vcs-Browser: https://salsa.debian.org/dtorrance-guest/git-big-picture
 
 Package: git-big-picture
 Architecture: all
-Depends: ${misc:Depends}, ${python:Depends}, git, graphviz
+Depends: git, graphviz, ${misc:Depends}, ${python3:Depends}
 Description: Visualization tool for Git repositories
  git-big-picture is a visualization tool for Git repositories. You can think of
  it as a filter that removes uninteresting commits from a DAG modelling a Git
