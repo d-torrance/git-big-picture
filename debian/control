@@ -6,8 +6,8 @@ Build-Depends: debhelper (>= 11), python, python-setuptools
 X-Python-Version: >=2.6
 Standards-Version: 3.9.6
 Homepage: https://github.com/esc/git-big-picture
-Vcs-Git: https://github.com/d-torrance/git-big-picture.git
-Vcs-Browser: https://github.com/d-torrance/git-big-picture
+Vcs-Git: https://salsa.debian.org/dtorrance-guest/git-big-picture.git
+Vcs-Browser: https://salsa.debian.org/dtorrance-guest/git-big-picture
 
 Package: git-big-picture
 Architecture: all
