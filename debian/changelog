@@ -1,3 +1,29 @@
+git-big-picture (0.10.1-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Add Python 3 support.
+  * debian/.gitlab-ci.yml
+    - Add Salsa-Pipeline config file.
+  * debian/compat
+    - Bump to debhelper compatibility level 11.
+  * debian/control
+    - Bump versioned dependency on debhelper to >= 11.
+    - Add dh-python to Build-Depends and drop python and python-setuptools
+      in favor of python3-all and python3-setuptools.
+    - Switch from ${python:Depends} to ${python3:Depends}.
+    - Update Vcs-* links to Salsa.
+    - Remove obsolete X-Python-Version.
+    - Bump Standards-Version to 4.2.1.
+  * debian/copyright
+    - Use https in Format field.
+  * debian/rules
+    - Remove get-orig-source target.
+    - Use pybuild and switch from python2 to python3.
+  * debian/watch
+    - Bump to uscan v4 and use special strings.
+
+ -- Doug Torrance <dtorrance@piedmont.edu>  Thu, 15 Nov 2018 14:27:06 -0500
+
 git-big-picture (0.9.0+git20131031-2) unstable; urgency=medium
 
   * debian/{control,copyright}
