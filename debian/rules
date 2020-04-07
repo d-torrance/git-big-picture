@@ -1,6 +1,6 @@
 #!/usr/bin/make -f
 %:
-	dh $@ --with python2
+	dh $@ --with python2 --buildsystem=pybuild
 
 get-orig-source:
 	@wget https://github.com/esc/git-big-picture/archive/master.tar.gz
