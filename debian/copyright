@@ -4,9 +4,9 @@ Source: https://github.com/esc/git-big-picture
 
 Files: *
 Copyright: 2010 Sebastian Pipping <sebastian@pipping.org>
-	   2010 Julius Plenz <julius@plenz.com>
-	   2010-12 Valentin Haenel <valentin.haenel@gmx.de>
-	   2011 Yaroslav Halchenko <debian@onerussian.com>
+           2010 Julius Plenz <julius@plenz.com>
+           2010-12 Valentin Haenel <valentin.haenel@gmx.de>
+           2011 Yaroslav Halchenko <debian@onerussian.com>
 License: GPL-3+
 
 Files: debian/*
