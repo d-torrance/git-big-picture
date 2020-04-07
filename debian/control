@@ -2,7 +2,7 @@ Source: git-big-picture
 Section: vcs
 Priority: optional
 Maintainer: Doug Torrance <dtorrance@piedmont.edu>
-Build-Depends: debhelper (>= 12~), python, python-setuptools
+Build-Depends: debhelper-compat (= 12), python, python-setuptools
 X-Python-Version: >=2.6
 Standards-Version: 3.9.6
 Homepage: https://github.com/esc/git-big-picture
