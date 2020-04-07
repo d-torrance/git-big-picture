@@ -1,3 +1,9 @@
+git-big-picture (0.9.0+git20131031-3) UNRELEASED; urgency=medium
+
+  * Use secure copyright file specification URI.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Tue, 07 Apr 2020 01:09:56 +0000
+
 git-big-picture (0.9.0+git20131031-2) unstable; urgency=medium
 
   * debian/{control,copyright}
