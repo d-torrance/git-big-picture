@@ -1,1 +1,2 @@
 use_python3_shebang.patch
+cram_git_identity.patch

@@ -1,0 +1,15 @@
+Description: Set up fake user so we don't get fatal 'empty ident name' error.
+Author: Doug Torrance <dtorrance@piedmont.edu>
+Last-Update: 2020-04-17
+
+--- a/test.cram
++++ b/test.cram
+@@ -31,6 +31,8 @@
+ create a fake repo and export vars
+ 
+   $ git init -q
++  $ git config user.email "git-big-picture@debian.org"
++  $ git config user.name "git-big-picture"
+   $ git commit -q --allow-empty -m "foo"
+   $ export outfile_svg='file.svg'
+   $ export viewer='true'
