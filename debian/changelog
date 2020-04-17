@@ -1,11 +1,10 @@
 git-big-picture (0.10.1-1) unstable; urgency=medium
 
+  [ Doug Torrance ]
   * New upstream release.
     - Add Python 3 support.
   * debian/.gitlab-ci.yml
     - Add Salsa-Pipeline config file.
-  * debian/compat
-    - Bump to debhelper compatibility level 11.
   * debian/control
     - Bump versioned dependency on debhelper to >= 11.
     - Add dh-python to Build-Depends and drop python and python-setuptools
@@ -22,7 +21,13 @@ git-big-picture (0.10.1-1) unstable; urgency=medium
   * debian/watch
     - Bump to uscan v4 and use special strings.
 
- -- Doug Torrance <dtorrance@piedmont.edu>  Thu, 15 Nov 2018 14:27:06 -0500
+  [ Debian Janitor ]
+  * debian/copyright: use spaces rather than tabs to start continuation lines.
+  * Bump debhelper from old 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository, Repository-Browse.
+
+ -- Doug Torrance <dtorrance@piedmont.edu>  Fri, 17 Apr 2020 15:27:28 -0400
 
 git-big-picture (0.9.0+git20131031-2) unstable; urgency=medium
 
