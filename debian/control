@@ -4,7 +4,10 @@ Priority: optional
 Maintainer: Doug Torrance <dtorrance@piedmont.edu>
 Build-Depends: debhelper-compat (= 12),
                dh-python,
+               git,
+               graphviz,
                python3-all,
+               python3-cram,
                python3-setuptools
 Standards-Version: 4.5.0
 Homepage: https://github.com/esc/git-big-picture
