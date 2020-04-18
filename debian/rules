@@ -8,4 +8,3 @@ override_dh_auto_test:
 ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
 	cram3 -v test.cram
 endif
-
