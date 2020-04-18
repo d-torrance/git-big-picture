@@ -1,0 +1,7 @@
+# We run the test from the temporary directory so that we test the installed
+# script and not the one in the source tree.
+Test-Command: cp test.cram "$AUTOPKGTEST_TMP";
+	      cd "$AUTOPKGTEST_TMP";
+	      sed -i 's/\$TESTDIR\///' test.cram;
+	      cram3 -v test.cram
+Depends: @, git, graphviz, python3-cram
