@@ -6,26 +6,38 @@ git-big-picture (0.10.1-1) unstable; urgency=medium
   * debian/.gitlab-ci.yml
     - Add Salsa-Pipeline config file.
   * debian/control
-    - Bump versioned dependency on debhelper to >= 11.
     - Add dh-python to Build-Depends and drop python and python-setuptools
       in favor of python3-all and python3-setuptools.
+    - Add git, graphviz, and python3-cram to Build-Depends for use during
+      test.
     - Switch from ${python:Depends} to ${python3:Depends}.
     - Update Vcs-* links to Salsa.
     - Remove obsolete X-Python-Version.
-    - Bump Standards-Version to 4.2.1.
+    - Bump Standards-Version to 4.5.0.
+    - Add Rules-Requires-Root field.
   * debian/copyright
     - Use https in Format field.
+  * debian/patches/cram_git_identity.patch
+    - Set up fake user so we don't get fatal 'empty ident name' error
+      during test.
+  * debian/patches/use_python3_shebang.patch
+    - Run script using Python 3.
   * debian/rules
     - Remove get-orig-source target.
     - Use pybuild and switch from python2 to python3.
+    - New override_dh_auto_test target which runs upstream test.
+  * debian/tests/control
+    - Add continuous integration test.
   * debian/watch
     - Bump to uscan v4 and use special strings.
 
   [ Debian Janitor ]
-  * debian/copyright: use spaces rather than tabs to start continuation lines.
+  * debian/copyright: use spaces rather than tabs to start continuation
+    lines.
   * Bump debhelper from old 9 to 12.
   * Set debhelper-compat version in Build-Depends.
-  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository, Repository-Browse.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
 
  -- Doug Torrance <dtorrance@piedmont.edu>  Fri, 17 Apr 2020 15:27:28 -0400
 
