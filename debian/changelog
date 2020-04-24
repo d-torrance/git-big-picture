@@ -2,9 +2,7 @@ git-big-picture (0.10.1-1) unstable; urgency=medium
 
   [ Doug Torrance ]
   * New upstream release.
-    - Add Python 3 support.
-  * debian/.gitlab-ci.yml
-    - Add Salsa-Pipeline config file.
+    - Add Python 3 support (Closes: #936615).
   * debian/control
     - Add dh-python to Build-Depends and drop python and python-setuptools
       in favor of python3-all and python3-setuptools.
@@ -26,6 +24,9 @@ git-big-picture (0.10.1-1) unstable; urgency=medium
     - Remove get-orig-source target.
     - Use pybuild and switch from python2 to python3.
     - New override_dh_auto_test target which runs upstream test.
+    - Fix trailing whitespace
+  * debian/salsa-ci.yml
+    - Add Salsa-Pipeline config file.
   * debian/tests/control
     - Add continuous integration test.
   * debian/watch
@@ -39,7 +40,7 @@ git-big-picture (0.10.1-1) unstable; urgency=medium
   * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
     Repository-Browse.
 
- -- Doug Torrance <dtorrance@piedmont.edu>  Fri, 17 Apr 2020 15:27:28 -0400
+ -- Doug Torrance <dtorrance@piedmont.edu>  Thu, 23 Apr 2020 22:35:15 -0400
 
 git-big-picture (0.9.0+git20131031-2) unstable; urgency=medium
 
